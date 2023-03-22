@@ -7,6 +7,7 @@ import Accueil from "./views/Accueil";
 import Jordan from "./views/Jordan";
 import Nike from "./views/Nike";
 import Adidas from "./views/Adidas";
+import Inscription from "./views/Inscription";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "Adidas",
         element: <Adidas />,
+      },
+      {
+        path: "Inscription",
+        element: <Inscription />,
       },
     ],
   },

@@ -11,9 +11,7 @@ function NavBar() {
       <button className="hover:scale-110 bg-black rounded-lg p-4 text-white text-1xl uppercase m-6">
         Connexion
       </button>
-      <button className="bg-black rounded-lg p-4 text-white text-1xl uppercase hover:scale-110 m-6 ">
-        Inscription
-      </button>
+      <Bouton path={"Inscription"} label={"Inscription"} />
       <Bouton path={"Panier"} label={"Panier"} />
       <Bouton path={""} label={"Accueil"} />
     </nav>
