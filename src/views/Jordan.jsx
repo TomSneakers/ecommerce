@@ -1,5 +1,4 @@
-export default Jordan (){
-    return (
-        <div><h1>jordan</h1></div>
-    )
+function Jordan() {
+  return <div>Jordan</div>;
 }
+export default Jordan;
