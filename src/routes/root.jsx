@@ -6,6 +6,7 @@ import Footer from "../component/footer.jsx";
 import { Outlet } from "react-router-dom";
 import "../index.css";
 import TTest from "../component/test.jsx";
+
 export default function Root() {
   return (
     <React.Fragment>
