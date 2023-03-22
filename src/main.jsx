@@ -1,24 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Panier from "./views/panier";
 import Root from "./routes/root";
-import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
-import { loader as rootLoader, action as rootAction } from "./routes/root";
+import Accueil from "./views/Accueil";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader,
-    action: rootAction,
     children: [
       {
-        path: "contacts/:contactId",
-        element: <Contact />,
+        path: "Panier",
+        element: <Panier />,
+      },
+      {
+        path: "",
+        element: <Accueil />,
       },
     ],
   },
