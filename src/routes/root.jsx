@@ -1,4 +1,3 @@
-import test from "../component/test.jsx";
 import "../component/navbar.jsx";
 import NavBar from "../component/navbar.jsx";
 import React from "react";
