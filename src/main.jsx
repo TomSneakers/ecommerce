@@ -8,6 +8,7 @@ import Jordan from "./views/Jordan";
 import Nike from "./views/Nike";
 import Adidas from "./views/Adidas";
 import Inscription from "./views/Inscription";
+import CartContextProvider from "./context/CartContext";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <CartContextProvider>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </CartContextProvider>
 );
