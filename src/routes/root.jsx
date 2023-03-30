@@ -15,7 +15,6 @@ export default function Root() {
         Bienvenue sur mon ecommerce
       </h1>
       <div className="outlet">
-        Ceci est l'outlet
         <Outlet />
       </div>
       <Footer />

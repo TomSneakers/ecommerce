@@ -1,13 +1,31 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-
+import Bouton from "./Bouton";
 function Card() {
   const products = [
     {
       marque: "jordan",
-      model: "dunk",
+      model: "JD3 Cement",
       prix: 180,
-      image: "/image/dunk.jpeg",
+      image: "/image/cement.webp",
+    },
+    {
+      marque: "nike",
+      model: "dunk low panda",
+      prix: 180,
+      image: "/image/nike.jpg",
+    },
+    {
+      marque: "adidas",
+      model: "FORUM",
+      prix: 180,
+      image: "/image/adidas.webp",
+    },
+    {
+      marque: "jordan",
+      model: "Jd1 hight UNC",
+      prix: 180,
+      image: "/image/jordan-UNC.jpeg",
     },
   ];
 
@@ -42,6 +60,7 @@ function Card() {
               >
                 Ajouter au panier
               </button>
+              <Bouton path={product.model} label={"Voir toutes les jordans"} />
             </div>
           </div>
         ))}

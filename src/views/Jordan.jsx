@@ -1,4 +1,6 @@
+import Card from "../component/Card";
+
 function Jordan() {
-  return <div>Jordan</div>;
+  return <Card />;
 }
 export default Jordan;
