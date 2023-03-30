@@ -29,8 +29,8 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 export { db, auth };
-
 ```
 
 4- Dans le terminal mettre la ligne de commande suivante: "npm run dev"
 5- Merci à vous !!!!
+````
