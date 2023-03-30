@@ -1,10 +1,10 @@
 import Box from "../component/Category";
-import Card from "../component/Card";
+import Boutique from "../component/Boutique.jsx";
 export default function Accueil() {
   return (
     <>
       <Box className="m-auto" />
-      <Card />
+      <Boutique />
     </>
   );
 }

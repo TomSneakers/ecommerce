@@ -1,6 +1,6 @@
-import Card from "../component/Card";
+import Boutique from "../component/Boutique.jsx";
 
 function Jordan() {
-  return <Card />;
+  return <Boutique />;
 }
 export default Jordan;

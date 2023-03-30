@@ -31,29 +31,24 @@ function RegistrationForm() {
     console.log(
       `Submitting Registration Form with, Email: ${email}, Password: ${password}`
     );
-    // logique de validation
 
     register(email, password);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <br />
-      <label>
-        Email:
-        <input type="email" value={email} onChange={handleEmailChange} />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-      </label>
-      <br />
-      <button type="submit">Submit</button>
+      <form className="flex flex-col gap-10" onSubmit={handleSubmit}>
+        <h1 className="text-4xl">Inscription</h1>
+        <div className="flex flex-col gap-10 items-center">
+            <div className="flex flex-col gap-10 w-1/5">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" className="border-2 border-black p-2" onChange={handleEmailChange}/>
+            </div>
+            <div className="flex flex-col gap-10 w-1/5">
+                <label htmlFor="password">Mot de passe</label>
+                <input type="password" id="password" name="password" className="border-2 border-black p-2" onChange={handlePasswordChange}/>
+            </div>
+            <button type={"submit"} className="bg-black text-white text-2xl p-4">S'inscrire</button>
+        </div>
     </form>
   );
 }

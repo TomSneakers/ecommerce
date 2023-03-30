@@ -1,7 +1,6 @@
 import "../component/navbar.jsx";
 import NavBar from "../component/navbar.jsx";
 import React from "react";
-import Footer from "../component/footer.jsx";
 import { Outlet } from "react-router-dom";
 import "../index.css";
 import TTest from "../component/test.jsx";
@@ -17,7 +16,6 @@ export default function Root() {
       <div className="outlet">
         <Outlet />
       </div>
-      <Footer />
     </React.Fragment>
   );
 }
